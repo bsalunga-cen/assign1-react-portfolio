@@ -51,25 +51,3 @@ const projects = [
   };
   
   export default Projects;
-
-// const Project = () => (
-//   <div className='services-section'>
-//     <h2 className='h2-section'>Projects.</h2>
-//     <div>
-//       {/* <img src="../images/project1.jpg" alt="Project 1" /> */}
-//       <h3>Serenity Spa Website</h3>
-//       <p>Description of your role and the outcome.</p>
-
-//       <h3>OrderXpress</h3>
-//         <p>Description ...</p>
-
-//     <h3>Javascript assignment</h3>
-//         <p>Description ....</p>
-    
-//     <h3>Screening Eagle: Inspect App (iOS)</h3>
-//         <p>Description ....</p>
-//     </div>
-//   </div>
-// );
-
-// export default Project;
