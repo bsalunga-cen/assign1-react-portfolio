@@ -5,14 +5,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "dev": "vite",
+    "dev": "concurrently 'vite' \"nodemon ../server.js\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "concurrently": "^9.0.1",
+    "global": "^4.4.0",
     "link-react": "^3.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -29,6 +31,7 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
+    "nodemon": "^3.1.7",
     "vite": "^5.4.1"
   }
 }

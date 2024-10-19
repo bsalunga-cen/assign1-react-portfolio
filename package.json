@@ -1,0 +1,29 @@
+{
+  "name": "PORTFOLIO",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "repository": "https://github.com/bsalunga-cen/assign2-portfolio-backend.git",
+  "author": "Bianca Salunga",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "dev": "concurrently 'vite' \"nodemon server.js\"",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "global": "^4.4.0",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.7.2"
+  }
+}
